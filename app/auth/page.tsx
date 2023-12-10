@@ -1,6 +1,7 @@
 import AuthService from "@/services/AuthService";
 import UserContextProvider from "@/contexts/UserContext";
 import NavBar from "@/components/Navbar";
+import UserProfile from "@/components/UserProfile";
 
 export default async function Basic({
   searchParams,
@@ -13,6 +14,7 @@ export default async function Basic({
     <main className="flex column max-w-screen-xl w-screen gap-4">
       <UserContextProvider token={searchParams.token}>
         <NavBar authLink={authKitURL} />
+        <UserProfile />
       </UserContextProvider>
     </main>
   );

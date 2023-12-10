@@ -18,10 +18,18 @@
 
 body {
   color: rgb(var(--foreground-rgb));
+  display: flex;
+  width: 100vw;
+  flex-direction: column;
+  align-items: center;
   background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+img {
+  width: inherit;
 }
